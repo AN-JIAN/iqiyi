@@ -160,52 +160,220 @@
 }
 
 // 轮播图
-// .new-focus-list {
-//     position: relative;
-//     li {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         height: 400px;
-//         width: 100%;
-//         z-index: 1;
-//         opacity: 0;
-//         zoom: 0;
-//         display: none;
-//         a {
-//             display: none;
-//             height: 400px;
-//             background-position: center center;
-//             background-repeat: no-repeat;
-//             background-size: auto;
-//         }
-//     }
-//     li:first-child {
-//         display: block;
-//         // z-index: 3;
-//         opacity: 1;
-//     }
-//     a:first-child {
-//         display: block;
-//     }
-// }
-// .new-focus-list {
-//     display: flex;
-// }
-// .new-focus-list li {
-//     height: 400px;
-// }
-.new-focus-li {
-    float: left;
+.new-focus-list {
+    position: relative;
+    width: 1920px;
+    height: 400px;
+    margin: auto;
+    li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 400px;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+    }
+    .active {
+        z-index: 3;
+        opacity: 1;
+    }
+}
+
+//  主体部分
+.mian {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// 广告图
+.main-banner {
+    width: 1200px;
+    height: 120px;
+    margin: 40px auto;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// 每日精选
+.selection {
+    width: 1200px;
+    height: 36px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    img {
+        width: 36px;
+        height: 36px;
+        float: left;
+    }
+    h3 {
+        line-height: 36px;
+        float: left;
+        font-size: 28px;
+        margin: 0 10px;
+        font-weight: normal;
+        vertical-align: middle;
+    }
+    span {
+        display: inline-block;
+        font-size: 16px;
+        color: #c2c2c2;
+        vertical-align: bottom;
+        padding: 0 10px;
+        margin-top: 10px;
+    }
+    // 更多按钮
+    a {
+        float: right;
+        font-size: 14px;
+        color: #666;
+        line-height: 36px;
+        em {
+            display: inline-block;
+            font-style: normal;
+            width: 6px;
+            height: 16px;
+        }
+    }
+    a:hover {
+        color: #ee394b;
+    }
+}
+
+.product {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    li {
+        width: 239px;
+        height: 256px;
+        border-left: 1px solid #e5e5e5;
+        border-top: 1px solid #e5e5e5;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+    li>a {
+        display: block;
+        text-align: center;
+        img {
+            width: 140px;
+            height: 140px;
+            margin: 15px 0 0;
+            transition: 1.6s;
+        }
+    }
+    li>a:hover img {
+        transform: scale(1.1);
+    }
+    .product-box {
+        margin: 15px 14px 0;
+        box-sizing: border-box;
+        a {
+            display: block;
+            color: #333;
+            font-size: 14px;
+        }
+        .product-title {
+            font-size: 12px;
+            color: #999;
+            line-height: 20px;
+            height: 20px;
+            // padding-top: 5px;
+            .product-title-box {
+                background: url(../images/mian-pic2.png);
+                display: inline-block;
+                width: 65px;
+                height: 18px;
+                line-height: 18px;
+                position: relative;
+                font-size: 12px;
+                // color: #fff;
+                background-position: 0 0;
+                border-radius: 3px;
+                margin-right: 5px;
+                em {
+                    font-style: normal;
+                    color: #fff;
+                    display: inline-block;
+                    margin-left: 10px;
+                    height: 18px;
+                    line-height: 18px;
+                    background-color: #ee394b;
+                    border-radius: 3px;
+                    padding-right: 3px;
+                    width: 52px;
+                    // word-break: break-all;
+                    // text-overflow: clip;
+                    // overflow: hidden;
+                    // vertical-align: bottom;
+                }
+            }
+        }
+        .product-title-box1 {
+            height: 40px;
+            line-height: 40px;
+            em {
+                font-style: normal;
+                font-size: 20px;
+                color: #ee394b;
+            }
+            span {
+                float: right;
+                color: #999;
+            }
+        }
+    }
+}
+
+// 尾部
+.foot-box1 {
     width: 100%;
-    height: 400px;
+    height: 495px;
+    background-color: #fafafa;
+    margin-top: 40px;
+    .foot-list {
+        width: 1200px;
+        height: 137px;
+        margin: 0 auto;
+        // background-color: yellow;
+        li {
+            position: relative;
+            width: 240px;
+            height: 137px;
+            // background-color: yellowgreen;
+            float: left;
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -80px;
+                margin-top: -35px;
+                display: block;
+                width: 70px;
+                height: 70px;
+                // float: left;
+                // margin: 34px 0 34px 43px;
+                text-align: center;
+            }
+            .li-box {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-top: -20px;
+                margin-left: 10px;
+                float: left;
+                p {
+                    color: #777;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
 }
-
-.new-focus-list a {
-    display: block;
-    height: 400px;
-}
-
-// .new-focus-list .pic1 {
-//     display: block;
-// }
