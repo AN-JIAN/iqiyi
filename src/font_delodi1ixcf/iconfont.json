@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "812708",
+      "name": "sousuo",
+      "font_class": "sousuo",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "1395846",
+      "name": "商家",
+      "font_class": "shangjia",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "5561621",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "7539058",
+      "name": "买家",
+      "font_class": "maijia",
+      "unicode": "e506",
+      "unicode_decimal": 58630
+    },
+    {
+      "icon_id": "8880967",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "10233519",
+      "name": "关注",
+      "font_class": "guanzhu",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    }
+  ]
+}

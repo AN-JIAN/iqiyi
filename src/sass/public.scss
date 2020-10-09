@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 "微软雅黑", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+.top_l {
+    justify-content: space-between;
+    color: #999;
+    margin-right: 20px;
+}
+
+.header-greeting,
+.header-login,
+.header-signUp {
+    color: #999;
+    margin-right: 20px;
+}
+
+.header-login:hover,
+.header-signUp:hover {
+    color: #ee394b;
+}
