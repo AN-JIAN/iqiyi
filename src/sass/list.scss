@@ -40,8 +40,14 @@
     height: 97px;
     margin: 0 auto;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
+    .mod-header-l {
+        float: left;
+    }
+    .mod-header-mid {
+        float: left;
+        margin-left: 155px;
+        margin-top: 37px;
+    }
     .mod-header-l img {
         width: 216px;
         height: 60px;
@@ -49,7 +55,6 @@
     }
     // 搜索框
     .search {
-        margin-top: 30px;
         width: 396px;
         border: 1px solid red;
         background: #fff;
@@ -64,7 +69,6 @@
     }
     // 按钮
     .btn {
-        margin-top: 30px;
         width: 100px;
         color: #fff;
         border: 0;
@@ -89,37 +93,6 @@
     }
     .mod-header-nav li:hover a {
         color: #ee394b;
-    }
-    // 搜索框右边栏
-    .mod-header-r {
-        display: flex;
-        margin-top: 30px;
-        justify-content: space-between;
-    }
-    .mod-header-r img {
-        width: 50px;
-        height: 50px;
-        margin: 0 10px 0 0;
-    }
-    .header-pro p {
-        width: 100px;
-        height: 20px;
-        padding: 5px 0;
-        color: #999;
-    }
-    .header-pro span {
-        width: 100px;
-        height: 20px;
-        padding: 5px 0;
-        color: #666;
-    }
-    // 小按钮
-    .smallbtn {
-        float: right;
-        margin: 31px 0 0 10px;
-        width: 39px;
-        height: 19px;
-        background: url(../images/arrow2.gif) no-repeat;
     }
 }
 
@@ -164,233 +137,10 @@
     width: 100%;
     height: 400px;
     margin: 0 auto;
-    ul>li {
-        position: absolute;
+    .banner-wrap {
         width: 100%;
         height: 400px;
-        left: 0;
-        top: 0;
-        opacity: 0;
-        .baner1 {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: url(http://pic0.iqiyipic.com/common/20200318/c36d469339ba4996af71e7fc8406c86d.jpg) no-repeat center center;
-        }
-        .baner2 {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: url(http://pic0.iqiyipic.com/common/20200304/512956b04fe9447db308928593a5ae93.jpg) no-repeat center center;
-        }
-        .baner3 {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: url(http://pic2.iqiyipic.com/common/20200219/03222235322145a4ac10076b1bbb105b.jpg) no-repeat center center;
-        }
-        .baner4 {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: url(http://pic3.iqiyipic.com/common/20200218/5b0d6aa4382f4cfaa61f592a5b078fbb.jpg) no-repeat center center;
-        }
-    }
-    .li1 {
-        opacity: 1;
-    }
-    ol {
-        position: absolute;
-        left: 50%;
-        margin-left: -60px;
-        bottom: 20px;
-        li {
-            float: left;
-            width: 15px;
-            height: 15px;
-            margin-right: 10px;
-            background: #777;
-            border-radius: 50%;
-            text-align: center;
-        }
-        .active {
-            background-color: red;
-        }
-    }
-    .arrows-l {
-        display: none;
-        width: 66px;
-        height: 66px;
-        font-size: 60px;
-        background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_prev.png);
-        border-radius: 50%;
-        position: absolute;
-        left: 150px;
-        top: 50%;
-        margin-top: -33px;
-    }
-    .arrows-r {
-        display: none;
-        width: 66px;
-        height: 66px;
-        font-size: 60px;
-        background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_next.png);
-        border-radius: 50%;
-        position: absolute;
-        right: 150px;
-        top: 50%;
-        margin-top: -33px;
-    }
-}
-
-//  主体部分
-.mian {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-// 广告图
-.main-banner {
-    width: 1200px;
-    height: 120px;
-    margin: 40px auto;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-// 每日精选
-.selection {
-    width: 1200px;
-    height: 36px;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    img {
-        width: 36px;
-        height: 36px;
-        float: left;
-    }
-    h3 {
-        line-height: 36px;
-        float: left;
-        font-size: 28px;
-        margin: 0 10px;
-        font-weight: normal;
-        vertical-align: middle;
-    }
-    span {
-        display: inline-block;
-        font-size: 16px;
-        color: #c2c2c2;
-        vertical-align: bottom;
-        padding: 0 10px;
-        margin-top: 10px;
-    }
-    // 更多按钮
-    a {
-        float: right;
-        font-size: 14px;
-        color: #666;
-        line-height: 36px;
-        em {
-            display: inline-block;
-            font-style: normal;
-            width: 6px;
-            height: 16px;
-        }
-    }
-    a:hover {
-        color: #ee394b;
-    }
-}
-
-// 产品
-.product {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-right: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-    li {
-        width: 239px;
-        height: 270px;
-        border-left: 1px solid #e5e5e5;
-        border-top: 1px solid #e5e5e5;
-        margin-left: -1px;
-        margin-top: -1px;
-    }
-    li>a {
-        display: block;
-        text-align: center;
-        img {
-            width: 140px;
-            height: 140px;
-            margin: 15px 0 0;
-            transition: 1.6s;
-        }
-    }
-    li>a:hover img {
-        transform: scale(1.1);
-    }
-    .product-box {
-        margin: 15px 14px 0;
-        box-sizing: border-box;
-        a {
-            display: block;
-            color: #333;
-            font-size: 14px;
-        }
-        .product-title {
-            font-size: 12px;
-            color: #999;
-            line-height: 20px;
-            height: 20px;
-            .product-title-box {
-                background: url(../images/mian-pic2.png);
-                display: inline-block;
-                width: 65px;
-                height: 18px;
-                line-height: 18px;
-                position: relative;
-                font-size: 12px;
-                background-position: 0 0;
-                border-radius: 3px;
-                margin-right: 5px;
-                em {
-                    font-style: normal;
-                    color: #fff;
-                    display: inline-block;
-                    margin-left: 10px;
-                    height: 18px;
-                    line-height: 18px;
-                    background-color: #ee394b;
-                    border-radius: 3px;
-                    padding-right: 3px;
-                    width: 52px;
-                    // word-break: break-all;
-                    // text-overflow: clip;
-                    // overflow: hidden;
-                    // vertical-align: bottom;
-                }
-            }
-        }
-        .product-title-box1 {
-            height: 40px;
-            line-height: 40px;
-            em {
-                font-style: normal;
-                font-size: 20px;
-                color: #ee394b;
-            }
-            span {
-                float: right;
-                color: #999;
-            }
-        }
+        background: url(http://pic5.iqiyipic.com/common/20160623/0b83360c260b449fa2ff22179d573baf.jpg) no-repeat center center;
     }
 }
 

@@ -38,8 +38,14 @@
   height: 97px;
   margin: 0 auto;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
+}
+.mod-header .mod-header-l {
+  float: left;
+}
+.mod-header .mod-header-mid {
+  float: left;
+  margin-left: 155px;
+  margin-top: 37px;
 }
 .mod-header .mod-header-l img {
   width: 216px;
@@ -47,7 +53,6 @@
   margin-top: 30px;
 }
 .mod-header .search {
-  margin-top: 30px;
   width: 396px;
   border: 1px solid red;
   background: #fff;
@@ -61,7 +66,6 @@
   outline: 0;
 }
 .mod-header .btn {
-  margin-top: 30px;
   width: 100px;
   color: #fff;
   border: 0;
@@ -85,35 +89,6 @@
 }
 .mod-header .mod-header-nav li:hover a {
   color: #ee394b;
-}
-.mod-header .mod-header-r {
-  display: flex;
-  margin-top: 30px;
-  justify-content: space-between;
-}
-.mod-header .mod-header-r img {
-  width: 50px;
-  height: 50px;
-  margin: 0 10px 0 0;
-}
-.mod-header .header-pro p {
-  width: 100px;
-  height: 20px;
-  padding: 5px 0;
-  color: #999;
-}
-.mod-header .header-pro span {
-  width: 100px;
-  height: 20px;
-  padding: 5px 0;
-  color: #666;
-}
-.mod-header .smallbtn {
-  float: right;
-  margin: 31px 0 0 10px;
-  width: 39px;
-  height: 19px;
-  background: url(../images/arrow2.gif) no-repeat;
 }
 
 .nav-wrap {
@@ -156,224 +131,10 @@
   height: 400px;
   margin: 0 auto;
 }
-.lunbo ul > li {
-  position: absolute;
+.lunbo .banner-wrap {
   width: 100%;
   height: 400px;
-  left: 0;
-  top: 0;
-  opacity: 0;
-}
-.lunbo ul > li .baner1 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url(http://pic0.iqiyipic.com/common/20200318/c36d469339ba4996af71e7fc8406c86d.jpg) no-repeat center center;
-}
-.lunbo ul > li .baner2 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url(http://pic0.iqiyipic.com/common/20200304/512956b04fe9447db308928593a5ae93.jpg) no-repeat center center;
-}
-.lunbo ul > li .baner3 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url(http://pic2.iqiyipic.com/common/20200219/03222235322145a4ac10076b1bbb105b.jpg) no-repeat center center;
-}
-.lunbo ul > li .baner4 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url(http://pic3.iqiyipic.com/common/20200218/5b0d6aa4382f4cfaa61f592a5b078fbb.jpg) no-repeat center center;
-}
-.lunbo .li1 {
-  opacity: 1;
-}
-.lunbo ol {
-  position: absolute;
-  left: 50%;
-  margin-left: -60px;
-  bottom: 20px;
-}
-.lunbo ol li {
-  float: left;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  background: #777;
-  border-radius: 50%;
-  text-align: center;
-}
-.lunbo ol .active {
-  background-color: red;
-}
-.lunbo .arrows-l {
-  display: none;
-  width: 66px;
-  height: 66px;
-  font-size: 60px;
-  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_prev.png);
-  border-radius: 50%;
-  position: absolute;
-  left: 150px;
-  top: 50%;
-  margin-top: -33px;
-}
-.lunbo .arrows-r {
-  display: none;
-  width: 66px;
-  height: 66px;
-  font-size: 60px;
-  background: url(http://www.iqiyipic.com/common/fix/PCIndex/images/new_focus_next.png);
-  border-radius: 50%;
-  position: absolute;
-  right: 150px;
-  top: 50%;
-  margin-top: -33px;
-}
-
-.mian {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.main-banner {
-  width: 1200px;
-  height: 120px;
-  margin: 40px auto;
-}
-.main-banner img {
-  width: 100%;
-  height: 100%;
-}
-
-.selection {
-  width: 1200px;
-  height: 36px;
-  margin: 0 auto;
-  padding-bottom: 10px;
-}
-.selection img {
-  width: 36px;
-  height: 36px;
-  float: left;
-}
-.selection h3 {
-  line-height: 36px;
-  float: left;
-  font-size: 28px;
-  margin: 0 10px;
-  font-weight: normal;
-  vertical-align: middle;
-}
-.selection span {
-  display: inline-block;
-  font-size: 16px;
-  color: #c2c2c2;
-  vertical-align: bottom;
-  padding: 0 10px;
-  margin-top: 10px;
-}
-.selection a {
-  float: right;
-  font-size: 14px;
-  color: #666;
-  line-height: 36px;
-}
-.selection a em {
-  display: inline-block;
-  font-style: normal;
-  width: 6px;
-  height: 16px;
-}
-.selection a:hover {
-  color: #ee394b;
-}
-
-.product {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  border-right: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-}
-.product li {
-  width: 239px;
-  height: 270px;
-  border-left: 1px solid #e5e5e5;
-  border-top: 1px solid #e5e5e5;
-  margin-left: -1px;
-  margin-top: -1px;
-}
-.product li > a {
-  display: block;
-  text-align: center;
-}
-.product li > a img {
-  width: 140px;
-  height: 140px;
-  margin: 15px 0 0;
-  transition: 1.6s;
-}
-.product li > a:hover img {
-  transform: scale(1.1);
-}
-.product .product-box {
-  margin: 15px 14px 0;
-  box-sizing: border-box;
-}
-.product .product-box a {
-  display: block;
-  color: #333;
-  font-size: 14px;
-}
-.product .product-box .product-title {
-  font-size: 12px;
-  color: #999;
-  line-height: 20px;
-  height: 20px;
-}
-.product .product-box .product-title .product-title-box {
-  background: url(../images/mian-pic2.png);
-  display: inline-block;
-  width: 65px;
-  height: 18px;
-  line-height: 18px;
-  position: relative;
-  font-size: 12px;
-  background-position: 0 0;
-  border-radius: 3px;
-  margin-right: 5px;
-}
-.product .product-box .product-title .product-title-box em {
-  font-style: normal;
-  color: #fff;
-  display: inline-block;
-  margin-left: 10px;
-  height: 18px;
-  line-height: 18px;
-  background-color: #ee394b;
-  border-radius: 3px;
-  padding-right: 3px;
-  width: 52px;
-}
-.product .product-box .product-title-box1 {
-  height: 40px;
-  line-height: 40px;
-}
-.product .product-box .product-title-box1 em {
-  font-style: normal;
-  font-size: 20px;
-  color: #ee394b;
-}
-.product .product-box .product-title-box1 span {
-  float: right;
-  color: #999;
+  background: url(http://pic5.iqiyipic.com/common/20160623/0b83360c260b449fa2ff22179d573baf.jpg) no-repeat center center;
 }
 
 .foot-box1 {
@@ -597,4 +358,4 @@
   color: #ee394b;
 }
 
-/*# sourceMappingURL=index1.css.map */
+/*# sourceMappingURL=list.css.map */

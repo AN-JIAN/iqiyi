@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+
+<body>
+    <!-- 
+        1.获取列表页(list.html)传来的sid，获取sid（操作地址栏）
+        2.将获取sid传给后端，后端获取sid，将对应的数据返回给前端。
+
+     -->
+    <div class="goodsinfo">
+        <div class="box">
+            <a href="cart.html" target="_blank">进入购物车</a>
+        </div>
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="" id="">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <!--放大镜下面小图列表-->
+                    <ul>
+
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <a href="javascript:;">加入购物车</a>
+                <!-- void(0) -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 引入cookie插件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.0/jquery.cookie.min.js"></script>
+    <script src="script/detail.js"></script>
+</body>
+
+</html>
