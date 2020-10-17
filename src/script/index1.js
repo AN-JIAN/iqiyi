@@ -70,7 +70,7 @@
     new lunbo().init()
         // 渲染数据
     $.ajax({
-        url: "http://192.168.11.63/IQIYI%20mall/php/piclist.php",
+        url: "http://10.31.163.218/IQIYI%20mall/php/piclist.php",
         dataType: 'json'
     }).done(function(data) {
         console.log(data);
